@@ -11,6 +11,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql+psycopg2://postgres:123@loc
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
+
 manager = LoginManager(app)
 
 from project import models, routes
