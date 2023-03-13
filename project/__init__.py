@@ -8,6 +8,7 @@ app.secret_key = 'some secret salt'
 #app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql+psycopg2://postgres:123@10.0.2.15:5432/test.db'
 app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql+psycopg2://postgres:123@localhost:5432/test.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
 db = SQLAlchemy(app)
 manager = LoginManager(app)
 
